@@ -1,0 +1,104 @@
+paths:
+    test_dir : output/synonyms/test/lm/
+    input_dir : output/synonyms/pairs_triples_examples/
+
+constants:
+    seed : 160
+
+tests:
+  - name : T1
+    type : 1
+    description : substitution
+    prompt : 
+
+  - name : T2
+    type : 2
+    description : relation + relation name
+    prompt : "{src} is a synonym of {word}."
+
+  - name : T3
+    type : 3
+    description : context + relation name
+    prompt: "{example} {src} is a synonym of {word}."
+
+  - name : T4
+    type : 4
+    description : context + target + reference word
+    prompt : "{example} This {word}"
+
+  - name : T5
+    type : 3
+    description : context + relation name paraphrase
+    prompt : "{example} {src} means {word}."
+
+  - name : T6
+    type : 3
+    description : context + relation name paraphrase
+    prompt : "{example} {src} is the same as {word}."
+
+  - name : T7
+    type : 5
+    description : relation + random nouns from wordnet for the negative examples
+    prompt : "{src} is a synonym of {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T8
+    type : 5
+    description : relation + random nouns from wordnet for the negative examples
+    prompt : "{src} means {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T9
+    type : 5
+    description : relation + random nouns from wordnet for the negative examples
+    prompt : "{src} is the same as {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T10
+    type : 4
+    description : context + target
+    prompt : "{example} {word}"
+
+  - name : T11
+    type : 6
+    description : context + relation + random nouns from wordnet for the negative examples
+    prompt : "{example} {src} is a synonym of {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T12
+    type : 7
+    description : substitution + random nouns from wordnet for the negative examples
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T13
+    type : 6
+    description : context + target + reference word + random nouns from wordnet for the negative examples
+    prompt : "{example} This {word}"
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T14
+    type : 6
+    description : context + relation + random nouns from wordnet for the negative examples
+    prompt : "{example} {src} means {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T15
+    type : 6
+    description : context + relation + random nouns from wordnet for the negative examples
+    prompt : "{example} {src} is the same as {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
+
+  - name : T16
+    type : 6
+    description : context + relation + random nouns from wordnet for the negative examples
+    prompt : "{example} {src} means the same thing as {word}."
+    negative : output/synonyms/negative/n_10000.txt
+    nb_neg : 10
