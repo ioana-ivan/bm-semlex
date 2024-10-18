@@ -46,6 +46,7 @@ Two main folders, **src** for code and **output** for data. \
         - processing utils
     - extract_from_semcor.py : Extract the base filename from Semcor and WordNet
     - extract_words.py : Extract the negative words from WordNet
+- other_files : Instructions for synonymy evaluation for humans
 
 
 
