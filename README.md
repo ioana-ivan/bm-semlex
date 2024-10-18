@@ -26,7 +26,6 @@ Now you should be able tu run any script in the /src folder.
 ## File structure
 
 Two main folders, **src** for code and **output** for data. \
-Two scripts are present in the root of the project, the scripts used to extract the basefile.
 
 - output
     - synonyms
@@ -45,8 +44,8 @@ Two scripts are present in the root of the project, the scripts used to extract 
         - utility for tokenizing
     - utils
         - processing utils
-- extract_from_semcor.py : Extract the base filename from Semcor and WordNet
-- extract_words.py : Extract the negative words from WordNet
+    - extract_from_semcor.py : Extract the base filename from Semcor and WordNet
+    - extract_words.py : Extract the negative words from WordNet
 
 
 
